@@ -5,7 +5,7 @@ function Footer() {
     return (
         <FooterBase> 
             <a href="https://github.com/paulohfreire">
-                <img src="https://fontmeme.com/permalink/200728/3fbd71b6591fc35cf6cfd4e7b36f1a3e.png" alt="PauloDev" border="0" />
+                <img src="https://fontmeme.com/permalink/200804/784e9ae3079c620a7183724e96a0de76.png" alt="Logo Learnflix" border="0" />
             </a>
             <p>
             Criado durante a
