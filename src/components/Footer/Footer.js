@@ -1,11 +1,12 @@
 import React from 'react';
+import Logo from '../../assets/img/Logo.png';
 import { FooterBase } from './styles';
 
 function Footer() {
     return (
         <FooterBase> 
             <a href="https://github.com/paulohfreire">
-                <img src="https://fontmeme.com/permalink/200804/784e9ae3079c620a7183724e96a0de76.png" alt="Logo Learnflix" border="0" />
+                <img className="Logo" src={Logo} alt="Logo Learnflix" border="0" />
             </a>
             <p>
             Criado durante a
