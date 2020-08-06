@@ -1,9 +1,9 @@
 import { useState } from 'react';
 
-function useForm(valoresIniciais) {
-  const [values, setValues] = useState(valoresIniciais);
+const useForm = (initialValues) => {
+  const [values, setValues] = useState(initialValues);
  
-  function setValue(chave, valor) {
+  const setValue = (chave, valor) => {
     // chave: nome, descricao...ETC
     setValues({
       ...values,
@@ -11,15 +11,15 @@ function useForm(valoresIniciais) {
     });
   }
   
-  function handleChange(infosDoEvento) {
+  const handleChange = (infosDoEvento) => {
     setValue(
       infosDoEvento.target.getAttribute('name'),
       infosDoEvento.target.value,
     );
   }
   
-  function clearForm () {
-    setValues(valoresIniciais);
+  const clearForm = () => {
+    setValues(initialValues);
   }
   
   return {

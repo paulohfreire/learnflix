@@ -5,11 +5,12 @@ import FormField from '../../../components/FormField';
 import Button from '../../../components/Button/Button';
 import useForm from '../../../hooks/useForm';
 
+
 function CadastroCategoria() {
   const valoresIniciais = {
-    nome: '',
-    descricao: '',
+    titulo: '',
     cor: '',
+    descricao: '',
   };
   const { handleChange, values, clearForm } = useForm(valoresIniciais);
 
@@ -19,7 +20,7 @@ function CadastroCategoria() {
     const URL_TOP = window.location.hostname.includes('localhost')
       ? 'http://localhost:8080/categorias'
       : 'https://learnflix.herokuapp.com/categorias';
-    
+
     fetch(URL_TOP)
       .then(async (respostaDoServidor) => {
         const resposta = await respostaDoServidor.json();
@@ -56,7 +57,7 @@ function CadastroCategoria() {
           onChange={handleChange}
         />
 
-<FormField
+        <FormField
           label="Nome da Categoria"
           name="nome"
           value={values.nome}
