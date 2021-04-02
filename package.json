@@ -18,7 +18,7 @@
     "react-scripts": "3.4.1",
     "react-slick": "^0.27.1",
     "slick-carousel": "^1.8.1",
-    "styled-components": "^5.1.1"
+    "styled-components": "^5.2.3"
   },
   "scripts": {
     "dev": "react-scripts start",
